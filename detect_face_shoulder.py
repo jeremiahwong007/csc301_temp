@@ -4,7 +4,7 @@ import argparse
 # import numpy as np
 # from scipy import stats;
 
-faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
+faceCascade = cv2.CascadeClassifier('./data/haarcascade_frontalface_alt.xml')
 
 cam = cv2.VideoCapture(0)
 if not cam.isOpened():
