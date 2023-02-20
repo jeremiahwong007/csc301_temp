@@ -13,8 +13,9 @@ def write_data_raw(x: int, y: int, w: int, h: int, file) -> bool:
                 + "(" + str(x + w) + ", " + str(y + h) + ")\n")
 
 cam = cv2.VideoCapture(0)
+
 if not cam.isOpened():
-    print("Cannot open camera")
+    print("Camera error.")
     exit()
 
 file = open("raw.txt", "w")
